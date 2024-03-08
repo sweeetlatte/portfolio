@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="right-section">
         <a href="/">Home</a>
         <a href="about">About</a>
-        <a href="work">Work</a>
+        <a href="works">Works</a>
         <a href="contact">Contact</a>
       </div>
     </div>
