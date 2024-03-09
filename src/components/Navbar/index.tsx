@@ -1,6 +1,28 @@
+import { useLocation } from 'react-router-dom';
 import './style.scss';
 
 export default function Navbar() {
+  const location = useLocation();
+
+  const links = [
+    {
+      path: '/',
+      title: 'Home',
+    },
+    {
+      path: 'about',
+      title: 'About',
+    },
+    {
+      path: 'works',
+      title: 'Works',
+    },
+    {
+      path: 'contact',
+      title: 'Contact',
+    },
+  ];
+
   return (
     <div className="navbar">
       <div className="left-section cormorant">
@@ -12,10 +34,21 @@ export default function Navbar() {
         </a>
       </div>
       <div className="right-section">
-        <a href="/">Home</a>
-        <a href="about">About</a>
-        <a href="works">Works</a>
-        <a href="contact">Contact</a>
+        {links.map((link) => (
+          <a
+            key={link.path}
+            href={link.path}
+            className={
+              location.pathname === '/' && location.pathname === link.path
+                ? 'active'
+                : location.pathname.slice(1).includes(link.path)
+                ? 'active'
+                : ''
+            }
+          >
+            {link.title}
+          </a>
+        ))}
       </div>
     </div>
   );

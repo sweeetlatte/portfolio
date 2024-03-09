@@ -33,3 +33,8 @@ code {
 .cormorant {
   font-family: 'Cormorant Garamond', serif;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+}
