@@ -1,4 +1,128 @@
 .home {
-  background-image: linear-gradient(#ffc249, #fff);
-  height: 100vh;
+  &__full-scr-flex-container {
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .relative-container {
+    position: relative;
+  }
+
+  .gradient-bg {
+    &_to-bottom {
+      background-image: linear-gradient(to bottom, #ffc249, #fff);
+    }
+
+    &_to-top {
+      background-image: linear-gradient(to top, #ffc249, #fff);
+    }
+  }
+
+  &__big-title {
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 908px;
+  }
+
+  &__hero,
+  &__work {
+    &-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > * + * {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &__link {
+    &-group {
+      display: flex;
+
+      > * + * {
+        margin-left: 20px;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      height: 36px;
+      padding: 0 18px 3px 18px;
+      font-size: 20px;
+      font-weight: normal;
+      color: #fbfbfd;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+      border-radius: 24px;
+      border: none;
+    }
+  }
+
+  &__summary {
+    &-section {
+      padding: 24vh 9vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-img {
+      flex-basis: 46%;
+      width: 37vw;
+      min-width: 280px;
+      height: 50vh;
+      min-height: 200px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-content {
+      flex-basis: 48%;
+    }
+
+    &-title {
+      font-size: 30px;
+    }
+    &-text {
+      padding: 16px 0;
+    }
+  }
+
+  &__work {
+    &-banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 64px;
+      color: var(--yellow-2);
+    }
+  }
+
+  &__talk-btn {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 999px;
+    background-color: var(--white-2-70);
+    cursor: pointer;
+  }
 }
