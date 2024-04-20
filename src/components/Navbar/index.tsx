@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+import Icons from '../Icons';
 import './style.scss';
 
 export default function Navbar() {
@@ -27,10 +28,7 @@ export default function Navbar() {
     <div className="navbar">
       <div className="left-section cormorant">
         <a href="/">
-          <b>
-            Thuy <i>L</i>inh -
-          </b>{' '}
-          <i>A lorem ipsum developer</i>
+          <Icons.Logo />
         </a>
       </div>
       <div className="right-section">
