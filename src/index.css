@@ -4,9 +4,12 @@
 
   --yellow-1: #c7bdaa;
   --yellow-1-36: rgba(199, 189, 170, 0.36);
+  --yellow-2: #d4cdbf;
 
   --white-2-70: rgba(251, 251, 253, 0.7);
   --white-2-40: rgba(251, 251, 253, 0.4);
+
+  --grey-1: #d9d9d9;
 
   --black: #625548;
   --black-2: #7b7065;
@@ -17,6 +20,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+*::selection {
+  background-color: var(--black-2);
+  color: var(--yellow-2);
 }
 
 body {
