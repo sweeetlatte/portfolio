@@ -46,14 +46,34 @@
       width: fit-content;
       height: 42px;
       padding: 0 18px 1px 24px;
+      position: relative;
       font-size: 20px;
       font-weight: normal;
       border-radius: 24px;
       border: 1px solid var(--black);
+      overflow: hidden;
 
       svg {
         margin-left: 3px;
         stroke: var(--black);
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 100%;
+        aspect-ratio: 1;
+        border-radius: 24px;
+        background-color: var(--black-3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.3s;
+      }
+
+      &:hover::before {
+        width: 100%;
       }
     }
   }
@@ -108,7 +128,7 @@
       text-transform: uppercase;
       white-space: nowrap;
       display: inline-block;
-      animation: 3s bannermove infinite linear;
+      animation: 320s bannermove infinite linear;
       letter-spacing: 4px;
 
       i {
@@ -144,6 +164,7 @@
       transform: scale(0);
       transition: 0.5s;
     }
+
     &:hover::before {
       transform: scale(1);
     }
