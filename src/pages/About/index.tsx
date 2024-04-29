@@ -16,12 +16,7 @@ export default function About() {
           laboris nisi ut aliquip ex ea commodo con Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
           nulla
         </p>
-        <a
-          href='https://drive.google.com/file/d/1MammtjyUSEZJJXAgTmnl-YoX05H5o2Lu/view?usp=sharing'
-          target='_blank'
-          rel='noreferrer'
-          className='link-btn'
-        >
+        <a href={process.env.REACT_APP_RESUME} target='_blank' rel='noreferrer' className='link-btn'>
           See my resumé <Icons.ArrowUpRight />
         </a>
       </div>
