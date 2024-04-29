@@ -1,32 +1,43 @@
 .about {
-  padding: 24vh 9vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+  padding: 130px 136px 48px 45vw;
 
   &__img {
-    flex-basis: 46%;
-    width: 545px;
-    height: 390px;
+    position: fixed;
+    top: 0vh;
+    left: -5vw;
+    width: 45vw;
+    height: 100vh;
+    background-color: var(--black);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
     }
   }
 
-  &__content {
-    flex-basis: 48%;
-  }
-
   &__name {
-    font-size: 30px;
+    text-align: left !important;
+    font-size: 56px;
   }
 
   &__text {
-    padding: 16px 0;
-    line-height: 1.75;
+    padding: 32px 0;
+    font-size: 14px;
     font-weight: 100;
+    line-height: 1.8;
+    letter-spacing: 0.6px;
+    display: flex;
+    flex-direction: column;
+
+    > * + * {
+      margin-top: 12px;
+    }
   }
 }
