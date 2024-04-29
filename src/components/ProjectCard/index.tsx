@@ -18,22 +18,21 @@ export default function ProjectCard({ title, description, techStack, img, liveLi
       <div className='project-card__info'>
         <div className='project-card__title'>
           <div className='cormorant'>{title}</div>
-          <div className='project-card__link-group'>
-            <a href={sourceLink} target='_blank' rel='noreferrer'>
-              Source code <Icons.ArrowUpRight />
-            </a>
-            <a href={liveLink} target='_blank' rel='noreferrer'>
-              See website <Icons.ArrowUpRight />
-            </a>
-          </div>
+          {inProgess ? (
+            <div className='project-card__badge'>
+              <i>In progress</i>
+            </div>
+          ) : (
+            <div className='project-card__link-group'>
+              <a href={sourceLink} target='_blank' rel='noreferrer'>
+                Source code <Icons.ArrowUpRight />
+              </a>
+              <a href={liveLink} target='_blank' rel='noreferrer'>
+                See website <Icons.ArrowUpRight />
+              </a>
+            </div>
+          )}
         </div>
-        {inProgess ? (
-          <div className='project-card__badge'>
-            <i>In progress</i>
-          </div>
-        ) : (
-          <></>
-        )}
         <div className='cormorant'>{description}</div>
         <div className='project-card__tech-group'>
           {techStack.map((tech) => (
