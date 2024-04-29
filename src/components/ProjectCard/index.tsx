@@ -9,9 +9,10 @@ interface ProjectCardProps {
   liveLink: string;
   sourceLink: string;
   isOddChild: boolean;
+  inProgess: boolean;
 }
 
-export default function ProjectCard({ title, description, techStack, img, liveLink, sourceLink, isOddChild }: ProjectCardProps) {
+export default function ProjectCard({ title, description, techStack, img, liveLink, sourceLink, isOddChild, inProgess }: ProjectCardProps) {
   return (
     <div className={`project-card${isOddChild ? '' : ' flex-reverse'}`}>
       <div className='project-card__info'>
@@ -26,6 +27,13 @@ export default function ProjectCard({ title, description, techStack, img, liveLi
             </a>
           </div>
         </div>
+        {inProgess ? (
+          <div className='project-card__badge'>
+            <i>In progress</i>
+          </div>
+        ) : (
+          <></>
+        )}
         <div className='cormorant'>{description}</div>
         <div className='project-card__tech-group'>
           {techStack.map((tech) => (
@@ -33,8 +41,8 @@ export default function ProjectCard({ title, description, techStack, img, liveLi
           ))}
         </div>
       </div>
-      <div className='project-card__image' style={{ height: '314px', width: '100%' }}>
-        <img src={img} alt={title} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+      <div className='project-card__image'>
+        <img src={img} alt={title} />
       </div>
     </div>
   );

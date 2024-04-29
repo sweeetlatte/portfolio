@@ -18,6 +18,14 @@
   max-width: 908px;
 }
 
+.link-btn-group {
+  display: flex;
+
+  > * + * {
+    margin-left: 20px;
+  }
+}
+
 .link-btn {
   display: flex;
   align-items: center;

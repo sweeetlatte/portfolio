@@ -1,19 +1,31 @@
-import ProjectCard from '../../components/ProjectCard';
-import bakeryImg from '../../assets/images/latte_bakery.png';
-import sashimiImg from '../../assets/images/sashimi_recipe.png';
-import rhinoImg from '../../assets/images/3d_rhino.png';
-import aroundMeImg from '../../assets/images/around_me.png';
+import ProjectCard from 'components/ProjectCard';
+import bakeryImg from 'assets/images/latte_bakery.png';
+import sashimiImg from 'assets/images/sashimi_recipe.png';
+import rhinoImg from 'assets/images/3d_rhino.png';
+import aroundMeImg from 'assets/images/around_me.png';
+import bakery3Img from 'assets/images/latte_bakery_3.png';
 import './style.scss';
 
 const projects = [
   {
+    title: 'Latte Bakery ver 3',
+    description:
+      'Project description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    techStack: ['ReactJS', 'Redux', 'React Router', 'Anime.js', 'Tailwind CSS', 'Express.js', 'MongoDB', 'Figma'],
+    img: bakery3Img,
+    liveLink: '',
+    sourceLink: 'https://github.com/sweeetlatte/latte-bakery-ver-3',
+    inProgress: true,
+  },
+  {
     title: 'Latte Bakery',
     description:
       'Project description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    techStack: ['ReactJS', 'Redux', 'React Router', 'Tailwind CSS'],
+    techStack: ['ReactJS', 'Redux', 'React Router', 'Tailwind CSS', 'Figma'],
     img: bakeryImg,
     liveLink: 'https://latte-bakery.vercel.app/',
     sourceLink: 'https://github.com/sweeetlatte/latte-bakery',
+    inProgress: false,
   },
   {
     title: 'Sashimi Recipe',
@@ -23,6 +35,7 @@ const projects = [
     img: sashimiImg,
     liveLink: 'https://sashimi-ver-2-sweeetlatte.vercel.app/',
     sourceLink: 'https://github.com/sweeetlatte/sashimi-ver-2',
+    inProgress: false,
   },
   {
     title: '3D Rhino',
@@ -32,6 +45,7 @@ const projects = [
     img: rhinoImg,
     liveLink: 'https://3d-rhino-ts.vercel.app/',
     sourceLink: 'https://github.com/sweeetlatte/3d-rhino-ts',
+    inProgress: false,
   },
   {
     title: 'Around Me',
@@ -41,6 +55,7 @@ const projects = [
     img: aroundMeImg,
     liveLink: 'https://sweeetlatte-around-me.netlify.app/',
     sourceLink: 'https://github.com/sweeetlatte/around-me',
+    inProgress: false,
   },
 ];
 
@@ -57,6 +72,7 @@ export default function Works() {
           liveLink={prj.liveLink}
           sourceLink={prj.sourceLink}
           isOddChild={idx % 2 === 0}
+          inProgess={prj.inProgress}
         />
       ))}
     </div>
