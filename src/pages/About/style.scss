@@ -1,0 +1,32 @@
+.about {
+  padding: 24vh 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__img {
+    flex-basis: 46%;
+    width: 545px;
+    height: 390px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    flex-basis: 48%;
+  }
+
+  &__name {
+    font-size: 30px;
+  }
+
+  &__text {
+    padding: 16px 0;
+    line-height: 1.75;
+    font-weight: 100;
+  }
+}
