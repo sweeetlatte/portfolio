@@ -47,7 +47,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className='big-title cormorant'>I HAVE WORKED LOREM IPSUM LOREM IPSUM</div>
+          <div className='big-title cormorant'>See what I've been working on</div>
           <a href={routes.WORKS} className='link-btn'>
             My projects <Icons.ArrowUpRight />
           </a>
