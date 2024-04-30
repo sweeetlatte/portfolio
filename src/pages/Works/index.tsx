@@ -1,9 +1,9 @@
 import ProjectCard from 'components/ProjectCard';
-import bakeryImg from 'assets/images/latte_bakery.png';
-import sashimiImg from 'assets/images/sashimi_recipe.png';
-import rhinoImg from 'assets/images/3d_rhino.png';
-import aroundMeImg from 'assets/images/around_me.png';
-import bakery3Img from 'assets/images/latte_bakery_3.png';
+import bakeryImg from 'assets/images/latte_bakery.webp';
+import sashimiImg from 'assets/images/sashimi_recipe.webp';
+import rhinoImg from 'assets/images/3d_rhino.webp';
+import aroundMeImg from 'assets/images/around_me.webp';
+import bakery3Img from 'assets/images/latte_bakery_3.webp';
 import './style.scss';
 
 const projects = [
