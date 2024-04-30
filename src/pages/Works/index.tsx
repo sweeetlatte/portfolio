@@ -10,7 +10,7 @@ const projects = [
   {
     title: 'Latte Bakery ver 3',
     description:
-      'Project description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+      'A full-stack website, this is an upgraded version of the Latte Bakery e-commerce platform, currently featuring MongoDB for data storage, ExpressJS for the backend, and Redux for global state management.',
     techStack: ['ReactJS', 'Redux', 'React Router', 'Anime.js', 'Tailwind CSS', 'Express.js', 'MongoDB', 'Figma'],
     img: bakery3Img,
     liveLink: '',
@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Latte Bakery',
     description:
-      'Project description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+      'An e-commerce website for Latte Bakery, with some basic features such as product browsing, cart management with Redux, and responsive design for optimal viewing across devices.',
     techStack: ['ReactJS', 'Redux', 'React Router', 'Tailwind CSS', 'Figma'],
     img: bakeryImg,
     liveLink: 'https://latte-bakery.vercel.app/',
@@ -29,8 +29,7 @@ const projects = [
   },
   {
     title: 'Sashimi Recipe',
-    description:
-      'Project description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    description: 'An animated website to showcasing step-by-step instructions for creating a delicious sashimi dish, featuring animations.',
     techStack: ['ReactJS', 'Anime.js'],
     img: sashimiImg,
     liveLink: 'https://sashimi-ver-2-sweeetlatte.vercel.app/',
@@ -39,8 +38,7 @@ const projects = [
   },
   {
     title: '3D Rhino',
-    description:
-      'Project description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    description: 'An interactive website for exhibiting a 3D rhino statue and providing information about rhino.',
     techStack: ['ReactJS', 'three.js', 'React Three Fiber', 'React Three Cannon', 'React Three Drei', 'Theme UI'],
     img: rhinoImg,
     liveLink: 'https://3d-rhino-ts.vercel.app/',
@@ -49,8 +47,7 @@ const projects = [
   },
   {
     title: 'Around Me',
-    description:
-      'Project description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    description: 'An animated landing page showcasing images of destinations within a country.',
     techStack: ['ReactJS', 'React Sping', 'GLTransitions', 'Theme UI'],
     img: aroundMeImg,
     liveLink: 'https://sweeetlatte-around-me.netlify.app/',
