@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className='about'>
       <div className='about__img'>
-        <img src={img} alt='' />
+        <img src={img} alt='' loading='lazy' />
       </div>
       <div className='about__content'>
         <div className='about__name cormorant'>

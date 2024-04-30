@@ -1,12 +1,14 @@
+import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import routes from './routes';
-import Main from './layouts/Main';
-import Home from './pages/Home';
-import About from './pages/About';
-import Works from './pages/Works';
-import Contact from './pages/Contact';
-import ErrorPage from 'pages/Error';
 import './App.scss';
+
+const Main = lazy(() => import('./layouts/Main'));
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Works = lazy(() => import('./pages/Works'));
+const Contact = lazy(() => import('./pages/Contact'));
+const ErrorPage = lazy(() => import('./pages/Error'));
 
 function App() {
   return (

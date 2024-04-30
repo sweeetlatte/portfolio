@@ -39,7 +39,7 @@ export default function ProjectCard({ title, description, techStack, img, liveLi
         </div>
       </div>
       <div className='project-card__image'>
-        <img src={img} alt={title} />
+        <img src={img} alt={title} loading='lazy' />
       </div>
     </div>
   );
