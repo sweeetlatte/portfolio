@@ -1,3 +1,6 @@
+$medium: 1200px;
+$small: 500px;
+
 .full-scr-flex-container {
   height: 100vh;
   min-height: 500px;
@@ -60,5 +63,36 @@
 
   &:hover::before {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .full-scr-flex-container {
+    padding: 32px;
+    padding-bottom: 6vh;
+  }
+
+  .big-title {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .full-scr-flex-container {
+    padding-bottom: 0;
+  }
+
+  .big-title {
+    font-size: 48px;
+    padding-bottom: 16px;
+  }
+
+  .link-btn-group {
+    flex-direction: column;
+
+    > * + * {
+      margin-left: 0;
+      margin-top: 16px;
+    }
   }
 }

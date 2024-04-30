@@ -52,7 +52,7 @@ export default function Home() {
             My projects <Icons.ArrowUpRight />
           </a>
           <a href='mailto:thuylinh271055@gmail.com' className='home__talk-btn cormorant'>
-            LET’S TALK
+            Let's talk<i>!</i>
           </a>
         </div>
       </div>
