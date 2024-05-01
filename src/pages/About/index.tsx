@@ -27,9 +27,8 @@ export default function About() {
           </p>
           <p>
             As my projects expanded in scope, I recognized the great amount of knowledge required to create visually appealing and
-            user-friendly websites. Therefore, I'm focusing on deepening my expertise in ReactJS and its ecosystem. Additionally,
-            recognizing the essential role of backend development in this journey, I'm expanding my knowledge in NodeJS and its ecosystem to
-            create engaging and user-centric experiences.
+            user-friendly websites. Therefore, I'm focusing on deepening my expertise in ReactJS. Additionally, recognizing the essential
+            role of backend development in this journey, I'm also expanding my knowledge in this area.
           </p>
           <p>
             My journey is just beginning, and I'm continuously enhancing my skills and knowledge to pave a bright and delightful path ahead.
