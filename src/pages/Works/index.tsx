@@ -48,7 +48,7 @@ const projects = [
   {
     title: 'Around Me',
     description: 'An animated landing page showcasing images of destinations within a country.',
-    techStack: ['ReactJS', 'React Sping', 'GLTransitions', 'Theme UI'],
+    techStack: ['ReactJS', 'React Spring', 'GLTransitions', 'Theme UI'],
     img: aroundMeImg,
     liveLink: 'https://sweeetlatte-around-me.netlify.app/',
     sourceLink: 'https://github.com/sweeetlatte/around-me',
